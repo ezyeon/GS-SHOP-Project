@@ -55,7 +55,9 @@ footer {
     border:1px solid #ddd; border-radius:50px;
 }
 .familysite a span { 
-    padding: 0 58px 0 0;
+    background: url(../img/iconFooter_familySite.png) no-repeat right center; 
+    display: block;
+    padding: 0 70px 0 0;
 }
 
 /* Footer family site sub menu CSS */
@@ -72,10 +74,11 @@ footer {
 .familysite_popup {
     width: 100%; 
     display: flex; justify-content: space-between;
- }
+}
 .familysite_popup:first-child { 
     margin-bottom: 30px; padding-bottom: 30px; 
-    border-bottom: 1px solid rgb(229, 229, 229); }
+    border-bottom: 1px solid rgb(229, 229, 229); 
+}
 
 .familysite_popup p { 
     font-size: 16px; line-height: 1; font-weight: 700; 
@@ -100,27 +103,34 @@ footer {
     background: url("../img/familysite_close.png") no-repeat; 
 }
 
-.ccm_page { display: none; }
+.ccm_page { 
+    display: none; 
+}
 
 /* ccm_page는 ccm클릭했을 때 뜨는 팝업, 수정중 */
 
 
 
-/* 1280/981/768/500 */
 
 /* 반응형 CSS */
+
+/* 반응형 1500px (layout의 문제로 BP 1500px 추가) */
 @media screen and (max-width:1280px) {
     .footer_link { 
         position: absolute; top: 0px; right: 50px;
     }
 }
 
+
+/* 반응형 1220px */
 @media screen and (max-width:1220px) {
     .footer_link { 
         position: absolute; top:20px; right: 50px;
     }   
 }
 
+
+/* 반응형 981px */
 @media screen and (max-width: 981px) {
     footer { 
         height: auto;
@@ -134,6 +144,8 @@ footer {
         font-size: 14px;
         margin: 2px 18px 3px 0;
     }
+    
+    /* Footer 좌측 정보 */
     .footer_info { 
         padding-bottom: 20px; 
     }
@@ -141,6 +153,7 @@ footer {
         font-size: 12px; letter-spacing: -0.5px; 
     }
 
+    /* Footer 우측 Link */
     .footer_link { 
         position: absolute; top:0px; right: 50px;
     }
@@ -150,51 +163,52 @@ footer {
     }
     .familysite { 
         font-size: 13px; 
-        height: 40px; padding: 13px 0px 13px 12px; 
+        height: 40px; padding: 13px 12px; 
     }
     .familysite a span { 
         font-size: 13px; 
-        padding: 0 60px 0 0; 
-    }
-    .footer_link {  
-        display: flex; justify-content: flex-end; 
     }
 }
 
+/* 반응형 768px(GS는 BP가 758px) */
 @media screen and (max-width: 768px) {
-    .footer_wrap {
-        flex-direction: column;
+    footer { 
+        height: auto;
+        position: relative;
     }
+    .footer_wrap {
+        flex-direction: column; align-items: flex-start;
+        position: relative;
+    }
+
+    /* Footer 좌측 정보 */
     .footer_info {
+        padding-bottom: 20px;
+    }
+    .copyright {
         padding-bottom: 30px;
     }
+
+    /* Footer 우측 Link */
     .footer_link {
-        padding-left: 0;
-        flex-direction: column; align-items: flex-end;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column; 
+        position: relative; bottom: 0; left: 0;
     }
     .footer_ccm { 
         width: 32px; height: 21px;
         background: url(../img/m_iconFooter_ccm.png) no-repeat right center; 
         background-size: 32px 21px;
-        top: -45px; left: auto; right: 0;   
+        position: absolute;
+        top: -45px; bottom: 65px; left: auto; right: 0;
     }
     .footer_link a {
         margin: 0;
     }
     .familysite {
-        width: 682px; max-width: 682px;
+        width: 100%;
+        margin: 0 auto;
         padding: 13px 16px 12px;
     }
-    .familysite a span {
-        padding: 0 550px 0 0;
-    }
-
-
-
-    
-
-}
-@media screen and (max-width: 500px) {
-    
-
 }

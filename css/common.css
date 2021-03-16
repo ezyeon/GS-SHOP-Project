@@ -49,6 +49,3 @@ p {
 @font-face { font-family: 'Metropolis-SemiBold'; src: url(../font/Metropolis-SemiBold.woff) format('woff2'); font-weight: 600; }
 @font-face { font-family: 'Metropolis-Bold'; src: url(../font/Metropolis-Bold.woff) format('woff2'); font-weight: 700; }
 @font-face { font-family: 'Metropolis-ExtraBold'; src: url(../font/Metropolis-ExtraBold.woff) format('woff2'); font-weight: 900; }
-
-
-
