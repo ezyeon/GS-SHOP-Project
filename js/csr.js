@@ -1,36 +1,35 @@
 // Header JAVA Script
 
-// max-width: 982px까지의 GNB Event
+    // max-width: 982px까지의 GNB Event
     
-    if (matchMedia("screen and (min-width: 981px)").matches) {
-        // Header Mouseover
-        function gnbSubMenuOpen() {
-            document.getElementsByClassName('wrap')[0].style = 
-            "height: 360px; transition: all 0.5s";
+    // Header Mouseover
+    function gnbSubMenuOpen() {
+        document.getElementsByClassName('wrap')[0].style = 
+        "height: 360px; transition: all 0.5s";
+    }
+    function gnbSubMenuClose() {
+        document.getElementsByClassName('wrap')[0].style = 
+        "height: 0px; transition: all 0.5s;";
+    }
+
+    // nav에 mouse over했을 때 border-bottom 생성
+    function borderBottom(target) {
+        document.getElementsByClassName('greenbottom')[target].style = "border-bottom: 3px solid rgb(191, 215, 21);";
+    }
+    function borderBottomNone(target) {
+        document.getElementsByClassName('greenbottom')[target].style = "border-bottom: 3px solid rgb(255, 255, 255);";
+    }
+
+    // Header 고정
+    function scrollEvent() {
+        if (window.pageYOffset > 10) { 
+            document.getElementsByClassName('wrap')[0].style = "height: 90px; position:fixed;";
         }
-        function gnbSubMenuClose() {
-            document.getElementsByClassName('wrap')[0].style = 
-            "height: 0px; transition: all 0.5s;";
-        }
-    
-        // nav에 mouse over했을 때 border-bottom 생성
-        function borderBottom(target) {
-            document.getElementsByClassName('greenbottom')[target].style = "border-bottom: 3px solid rgb(191, 215, 21);";
-        }
-        function borderBottomNone(target) {
-            document.getElementsByClassName('greenbottom')[target].style = "border-bottom: 3px solid rgb(255, 255, 255);";
-        }
-    
-        // Header 고정
-        function scrollEvent() {
-            if (window.pageYOffset > 10) { 
-                document.getElementsByClassName('wrap')[0].style = "height: 90px; position:fixed;";
-            }
-            else {
-                document.getElementsByClassName('wrap')[0].style = "height: 0px; position:fixed;";
-            }
+        else {
+            document.getElementsByClassName('wrap')[0].style = "height: 0px; position:fixed;";
         }
     }
+    
 
     // 페이지 영문으로 바꿀때 click event
     var openState = false;
