@@ -59,7 +59,7 @@ main {
         position: relative; top: 14px; left: calc(50% - 80px);
         background-color: rgb(255, 255, 255);
         border: 1px solid rgb(229, 229, 229);
-        z-index: 100;
+        z-index: 1;
      }
     .subpg_csr_list a { 
         font-size: 16px; line-height: 31px; font-weight: 400; letter-spacing: -0.6px;
@@ -93,7 +93,7 @@ main {
         padding: 20px 35px 40px;
         border: 1px solid rgb(229, 229, 229) ;
         position: relative; top: 35px; right: -30px;
-        z-index: 100;
+        z-index: 1;
     }
     .shr_sns img {
         display: block; 

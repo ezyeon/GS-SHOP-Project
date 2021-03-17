@@ -7,6 +7,7 @@ footer {
     background: url(../img/logo_color.png) no-repeat 50px 80px rgb(255, 255, 255);
     border-top: 1px solid rgb(229, 229, 229); 
     position: relative; top: 0; left: 0;
+    z-index: 1;
 }
 
 .footer_wrap {
@@ -66,7 +67,7 @@ footer {
     font-size: 15px; line-height: 16px; font-weight: 300; 
     color: rgb(85, 85, 85);
     max-width: 475px; min-width: 450px;
-    position: absolute; bottom: 85px; right: 50px; z-index: 100;
+    position: absolute; bottom: 85px; right: 50px; z-index: 2;
     padding: 50px 40px; 
     background-color: rgb(255, 255, 255); 
     border: 1px solid rgb(191, 215, 21); border-radius: 30px;
