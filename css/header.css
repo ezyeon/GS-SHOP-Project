@@ -241,6 +241,7 @@ nav {
     /* java script로 위치조정 */
     .m_gnb_menu { 
         position: absolute; right: -100%;
+        overflow: hidden;
     }
 
     /* Mobile GNB 초기값 */
