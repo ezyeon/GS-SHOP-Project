@@ -176,7 +176,7 @@ main {
 /* Scroll Animation CSS */
 .sa {
     opacity: 0;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 /* 아래에서 위로 페이드 인 */
 .sa_up {

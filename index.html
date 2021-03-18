@@ -20,12 +20,13 @@
     <link rel="stylesheet" href="css/index.css">
 
     <script src="js/csr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 
 </head>
 <body onscroll="scrollEvent();">
     <!-- Header -->
-    <header onmouseover="gnbSubMenuOpen()" onmouseout="gnbSubMenuClose()">
+    <header onmouseover="gnbSubMenuOpen()" onmouseout="gnbSubMenuClose()" id="m_header">
 
         <!-- Desktop & Mobile GNB default -->
         <div class="wrap_default">
@@ -48,6 +49,12 @@
                 </div>
             </div>
             <a href="javascript:void(0);" class="m_gnb_menu_btn" onclick="mobileMenuOpen()"></a>
+        </div>
+
+        <!-- Mobile Scroll GNB -->
+        <div class="m_menu_scroll">
+            <a href=""><h1 class="m_scroll_logo_c"><span></span></h1></a>
+            <a href="javascript:void(0);" class="m_gnb_menu_btn_c" onclick="mobileMenuOpen()"></a>
         </div>
 
         <!-- Desktop GNB full menu -->
@@ -142,7 +149,9 @@
                 <!-- GNB Menu -->
                 <nav>
                     <div class="gnb_menu_m">
-                        <a href="javascript:void(0);" class="gnb_menu_list" onclick="contentsOpen(0)"><span>회사소개</span></a>
+                        <a href="javascript:void(0);" class="gnb_menu_list" onclick="contentsOpen(0)">
+                            <span>회사소개</span>
+                        </a>
                         <ul class="gnb_hiddenmenu">
                             <li><a href="#">회사개요</a></li>
                             <li><a href="#">연혁</a></li>
@@ -151,7 +160,9 @@
                         </ul>
                     </div>
                     <div class="gnb_menu_m">
-                        <a href="javascript:void(0);" class="gnb_menu_list" onclick="contentsOpen(1)"><span>미디어센터</span></a>
+                        <a href="javascript:void(0);" class="gnb_menu_list" onclick="contentsOpen(1)">
+                            <span>미디어센터</span>
+                        </a>
                         <ul class="gnb_hiddenmenu">
                             <li><a href="#">NEWS</a></li>
                             <li><a href="#">ON-AIR</a></li>
@@ -159,7 +170,9 @@
                         </ul>
                     </div>
                     <div class="gnb_menu_m">
-                        <a href="javascript:void(0);" class="gnb_menu_list" onclick="contentsOpen(2)"><span>지속가능경영</span></a>
+                        <a href="javascript:void(0);" class="gnb_menu_list" onclick="contentsOpen(2)">
+                            <span>지속가능경영</span>
+                        </a>
                         <ul class="gnb_hiddenmenu">
                             <li><a href="#">사회공헌</a></li>
                             <li><a href="#">환경경영</a></li>
@@ -169,7 +182,9 @@
                         </ul>
                     </div>
                     <div class="gnb_menu_m">
-                        <a href="javascript:void(0);" class="gnb_menu_list" onclick="contentsOpen(3)"><span>투자정보</span></a>
+                        <a href="javascript:void(0);" class="gnb_menu_list" onclick="contentsOpen(3)">
+                            <span>투자정보</span>
+                        </a>
                         <ul class="gnb_hiddenmenu">
                             <li><a href="#">IR정보</a></li>
                             <li><a href="#">경영실적</a></li>
@@ -468,6 +483,10 @@
 
         window.addEventListener('load', saFunc);
         window.addEventListener('scroll', saFunc);
+
+
+
+
 
 
     </script>

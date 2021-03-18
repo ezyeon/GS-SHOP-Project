@@ -49,3 +49,17 @@ p {
 @font-face { font-family: 'Metropolis-SemiBold'; src: url(../font/Metropolis-SemiBold.woff) format('woff2'); font-weight: 600; }
 @font-face { font-family: 'Metropolis-Bold'; src: url(../font/Metropolis-Bold.woff) format('woff2'); font-weight: 700; }
 @font-face { font-family: 'Metropolis-ExtraBold'; src: url(../font/Metropolis-ExtraBold.woff) format('woff2'); font-weight: 900; }
+
+
+
+
+/* Animation */
+@keyframes r_to_l {
+    0% { right: -100% }
+    100% { right: 0%; }
+}
+
+@keyframes l_to_r {
+    0% { right: 0% }
+    100% { right: -100%; }
+}

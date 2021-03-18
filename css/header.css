@@ -160,7 +160,9 @@ nav {
     padding-bottom: 50px; 
 }
 
+/* Mobile menu Desktop환경에서 숨기기 */
 .m_gnb_menu { display: none; }
+
 
 
 
@@ -235,14 +237,45 @@ nav {
 
     header {
         width: 100%; height: 45px;
-        position: absolute;
         display: block;
-        z-index: 1;
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
     }
+    
+    /* 스크롤 GNB 컨트롤 */
+    .m_menu_scroll {
+        width: 100%; height: 45px;
+        display: flex; justify-content: space-between; align-items: center;
+        background: rgb(255, 255, 255);
+        padding: 0 5%; margin: 0;
+        position: fixed; top: 0px;
+    }
+    .m_scroll_logo_c {
+        display: inline-block;
+        width: 78px; height: 15px;
+        background: url(../img/m_logo_on.png) no-repeat;
+        background-size: 78px auto;
+        top: 15px; left: 5%;
+    }
+    .m_gnb_menu_btn_c {
+        width: 21px; height: 23px;
+        display: inline-block;
+        background: url(../img/m_allMenuBtn_on.png) no-repeat center right;
+        background-size: 16px auto;
+        top: 11px; right: 5%;
+    }
+    .m_menu_scroll {
+        top: -45px;
+    }
+    .m_menu_scroll.show {
+        top: 0;
+    }
+
     /* java script로 위치조정 */
     .m_gnb_menu { 
+        width: 100%; height: 100vh;
         position: absolute; right: -100%;
-        overflow: hidden;
     }
 
     /* Mobile GNB 초기값 */
@@ -309,11 +342,12 @@ nav {
         text-align: left;
         padding: 0;
         position: absolute; top: 45px;
-        height: -webkit-calc(100% - 45px);
-        overflow-y: auto; 
+        height: -webkit-calc(100vh - 45px);
+
     }
     .gnb_menu_m {
         max-height: 63px; overflow: hidden;
+        transition: all 0.5s;
     }
     .gnb_menu_list { 
         font-family: "Metropolis-Bold", "Noto Sans KR" ;
@@ -323,6 +357,18 @@ nav {
         display: block;
         padding: 22px 40px 22px 15px;
         background: url(../img/allMenuD_oneDepth_open.png) no-repeat right 15px top 50%;
+        background-size: 17px 9px;
+        border-bottom: 1px solid rgb(229, 229, 229);
+        
+    }
+    .gnb_menu_list_close { 
+        font-family: "Metropolis-Bold", "Noto Sans KR" ;
+        font-size: 18px; 
+        font-weight: 700;
+        color: rgb(34, 34, 34);
+        display: block;
+        padding: 22px 40px 22px 15px;
+        background: url(../img/allMenuD_oneDepth_close.png) no-repeat right 15px top 50%;
         background-size: 17px 9px;
         border-bottom: 1px solid rgb(229, 229, 229);
     }
@@ -410,6 +456,11 @@ nav {
         line-height: 22px;
     }
 }
+
+
+
+
+
 
 
 
