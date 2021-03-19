@@ -44,7 +44,7 @@
                 <p>|</p>
                 <a href="" class="top_locate_default">위치안내</a>
                 <div class="language_default" >
-                    <a href=""><span>KOR</span><img src="img/header_lang_wht.png"></a>
+                    <a href="javascript:void(0);"><span>KOR</span><img src="img/header_lang_wht.png"></a>
                     <a href=""><span>ENG</span></a>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                         <a href="" class="top_locate">위치안내</a>
                     </div>
                     <div class="language" onclick="languageChange()" >
-                        <a class="lang_kor"><span>KOR</span><img src="img/header_lang_black.png" class="lang_img"></a>
+                        <a href="javascript:void(0);" class="lang_kor"><span>KOR</span><img src="img/header_lang_black.png" class="lang_img"></a>
                         <a href=""><span>ENG</span></a>
                     </div>
                 </div>
@@ -214,10 +214,10 @@
     <main>
         <!-- Main Hero -->
         <section class="subpg_hero">
-            <h3 class="sa sa_up">사회공헌</h3>
-            <p class="subpg_hero_title sa sa_up" data-sa-delay="200">GS SHOP이 가장 잘 할 수 있는 방법으로 나눔의 가치를 실현합니다</p>
+            <h3 class="subpg_hero_title">사회공헌</h3>
+            <p class="subpg_hero_txt">GS SHOP이 가장 잘 할 수 있는 방법으로 나눔의 가치를 실현합니다</p>
             <!-- SubPage Menu -->
-            <div class="subpg_menu_wrap sa sa_up">
+            <div class="subpg_menu_wrap">
                 <!-- SubPage Menu left -->
                 <div class="subpg_menu">
                     <p><img src="img/indicatorD_location_home.png"></p>
@@ -360,7 +360,7 @@
             <div class="footer_link">
                 <a href="" class="footer_ccm"></a>
                 <div class="familysite">
-                    <a href="javascript:void(0);"><span>Family Site</span></a>
+                    <a href="javascript:void(0);" onclick="familySiteOpen()"><span>Family Site</span></a>
                 </div>
 
                 <!-- Footer CCM Pop-up Page -->
@@ -417,31 +417,32 @@
                 </div>
 
                 <!-- Footer family site sub menu -->
-                <div class="footer_popup_wrap">
-                    <div class="footer_popup">
+                <div class="familysite_riseup">
+                    <div class="familysite_popup_wrap">
                         <div class="familysite_popup">
-                            <p>자매사</p>
-                            <div>
-                                <a href="">GS</a>
-                                <a href="">GS칼텍스</a>
-                                <a href="">GS리테일</a>
-                                <a href="">GS EPS</a>
-                                <a href="">GS건설</a>
-                                <a href="">GS글로벌</a>
-                                <a href="">GS스포츠</a>
-                                <a href="">GS에너지</a>
-                                <a href="">GS E&R</a>
+                            <p class="familysite_category">자매사</p>
+                            <div class="familysite_list">
+                                <p><a href="">GS</a></p>
+                                <p><a href="">GS칼텍스</a></p>
+                                <p><a href="">GS리테일</a></p>
+                                <p><a href="">GS EPS</a></p>
+                                <p><a href="">GS건설</a></p>
+                                <p><a href="">GS글로벌</a></p>
+                                <p><a href="">GS스포츠</a></p>
+                                <p><a href="">GS에너지</a></p>
+                                <p><a href="">GS E&R</a></p>
                             </div>
                         </div>
                         <div class="familysite_popup">
-                            <p>자회사</p>
-                            <div>
-                                <a href="">GS텔레서비스</a>
-                                <a href="">텐바이텐</a>
+                            <p class="familysite_category">자회사</p>
+                            <div class="familysite_list">
+                                <p><a href="">GS텔레서비스</a></p>
+                                <p><a href="">텐바이텐</a></p>
                             </div>
                         </div>
-                        <a href="" class="close_btn"></a>
+                        <a href="javascript:void(0);" class="close_btn" onclick="familySiteClose()"></a>
                     </div>
+
                 </div>
                 
             </div>

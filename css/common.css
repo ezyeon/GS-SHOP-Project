@@ -63,3 +63,13 @@ p {
     0% { right: 0% }
     100% { right: -100%; }
 }
+
+@keyframes rise_up {
+    0% { top: 80px; opacity: 0; }
+    100% { top: 0px; opacity: 1; }
+}
+
+@keyframes rise_up_bottom {
+    0% { margin-bottom: -80px; opacity: 0; }
+    100% { margin-bottom: 0px; opacity: 1; }
+}
