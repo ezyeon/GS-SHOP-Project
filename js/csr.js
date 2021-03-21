@@ -110,6 +110,8 @@
 
         // Mobile에서의 GNB Open event(완성)
         function mobileMenuOpen() {
+            // 클릭하면 맨 위로 이동 추가(0320)
+            document.documentElement.scrollTop = 0; 
             document.getElementById('m_header').style = "height:100vh; overflow:visible; background-color: rgba(0, 0, 0, 0.4);";
             document.getElementsByClassName('m_gnb_menu')[0].style = "right:0%; height:100vh; animation: r_to_l 0.5s forwards;";
             document.getElementsByTagName('body')[0].style.overflow = 'hidden';
@@ -182,6 +184,13 @@
     }
 
 
+    // 페이지 위쪽으로 이동하는 click event
+
+    function goTop() {
+        document.documentElement.scrollTop = 0;
+    }
+
+
 
 
 // Footer JAVA Script
@@ -198,14 +207,6 @@
 
 var delay = 300;
 var timer = null;
-
-//Javascript
-window.addEventListener('resize', function(){
-    clearTimeout(timer);
-    timer = setTimeout(function(){
-        console.log('resize event!');
-    }, delay);
-});
 
 
 

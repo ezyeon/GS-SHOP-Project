@@ -104,10 +104,14 @@ nav {
     color: rgb(85, 85, 85); text-align: center;
     padding: 9px 0; 
 }
-.gnb_hiddenmenu a:hover { 
+@media (hover: hover) {
+	.gnb_hiddenmenu a:hover { 
     font-family:'Metropolis-Medium','Noto Sans KR'; 
     color: rgb(177, 199, 18); font-weight: 500; 
+    }
 }
+
+
 
 /* GNB Utility */
 .top_utils { 
@@ -135,9 +139,14 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.4); border-radius: 32px;
     overflow: hidden; 
 }
-.language a:hover { 
+
+@media (hover: hover) {
+	.language a:hover { 
     color:#b1c712; 
+    }
 }
+
+
 .lang_kor {
     font-weight: 500;
     display: flex; justify-content: left; align-items: flex-start;
@@ -276,6 +285,7 @@ nav {
     .m_gnb_menu { 
         width: 100%; height: 100vh;
         position: absolute; right: -100%;
+        overflow-y: auto;
     }
 
     /* Mobile GNB 초기값 */
@@ -349,18 +359,6 @@ nav {
         max-height: 63px; overflow: hidden;
         transition: all 0.5s;
     }
-    .gnb_menu_list { 
-        font-family: "Metropolis-Bold", "Noto Sans KR" ;
-        font-size: 18px; 
-        font-weight: 700;
-        color: rgb(34, 34, 34);
-        display: block;
-        padding: 22px 40px 22px 15px;
-        background: url(../img/allMenuD_oneDepth_open.png) no-repeat right 15px top 50%;
-        background-size: 17px 9px;
-        border-bottom: 1px solid rgb(229, 229, 229);
-        
-    }
     .gnb_menu_list_close { 
         font-family: "Metropolis-Bold", "Noto Sans KR" ;
         font-size: 18px; 
@@ -371,6 +369,17 @@ nav {
         background: url(../img/allMenuD_oneDepth_close.png) no-repeat right 15px top 50%;
         background-size: 17px 9px;
         border-bottom: 1px solid rgb(229, 229, 229);
+    }
+    .gnb_menu_list { 
+        font-family: "Metropolis-Bold", "Noto Sans KR" ;
+        font-size: 18px; 
+        font-weight: 700;
+        color: rgb(34, 34, 34);
+        display: block;
+        padding: 22px 40px 22px 15px;
+        background: url(../img/allMenuD_oneDepth_open.png) no-repeat right 15px top 50%;
+        background-size: 17px 9px;
+        border-bottom: 1px solid rgb(229, 229, 229);    
     }
     .gnb_hiddenmenu { 
         padding: 15px 20px;
@@ -387,10 +396,8 @@ nav {
         background-image: none;
         border: none;
     }
-    .gnb_hiddenmenu a:hover { 
-        font-family:'Metropolis-Regular','Noto Sans KR'; 
-        color: rgb(34, 34, 34); font-weight: 400;
-    }
+
+
 
     /* GNB 인재채용 */
     .top_hr { 
