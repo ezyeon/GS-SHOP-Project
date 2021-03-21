@@ -112,8 +112,8 @@
         function mobileMenuOpen() {
             // 클릭하면 맨 위로 이동 추가(0320)
             document.documentElement.scrollTop = 0; 
-            document.getElementById('m_header').style = "height:100vh; overflow:visible; background-color: rgba(0, 0, 0, 0.4);";
-            document.getElementsByClassName('m_gnb_menu')[0].style = "right:0%; height:100vh; animation: r_to_l 0.5s forwards;";
+            document.getElementById('m_header').style = "height:100vh; overflow:auto; background-color: rgba(0, 0, 0, 0.4);";
+            document.getElementsByClassName('m_gnb_menu')[0].style = "right:0%;  height: 100%; max-height:100vmax; animation: r_to_l 0.5s forwards;";
             document.getElementsByTagName('body')[0].style.overflow = 'hidden';
         }
 
@@ -123,6 +123,12 @@
             document.getElementsByClassName('m_gnb_menu')[0].style = "right:-100%; animation: l_to_r 0.5s forwards;";
             document.getElementsByTagName('body')[0].style.overflow = 'visible';
         }
+
+
+
+
+
+
 
 
         // Mobile에서의 nav의 hidden menu open Event
