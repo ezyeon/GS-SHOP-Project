@@ -187,9 +187,12 @@ nav {
 
 
 /* 반응형 1220px */
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1220px) {
     
     /* GNB default */
+    .top_utils_default {
+        right: 15px;
+    }
     .gnb_menu_default a {
         padding: 36px 20px; 
     }
@@ -281,13 +284,6 @@ nav {
         top: 0;
     }
 
-    /* java script로 위치조정 */
-    .m_gnb_menu { 
-        width: 100%; height: 100vh;
-        position: absolute; right: -100%;
-        overflow-y: auto;
-    }
-
     /* Mobile GNB 초기값 */
     .wrap_default {
         height: 45px;
@@ -310,12 +306,28 @@ nav {
         position: absolute; top: 11px; right: 5%;
     }
 
+
+    /* java script로 위치조정 */
+    .m_gnb_menu { 
+        width: 80%; height: 100vh;
+        position: absolute; right: -90%;
+        overflow-y: auto;
+        background-color: rgb(255, 255, 255);
+    }
     /* Mobile GNB Open */
     .wrap {
-        width: 80%; min-width: 260px; height: 100%;
+        width: 100%; min-width: 260px; 
+        height: auto;
         padding: 0;
         position: absolute; top: 0; right: 0;
         z-index: 200;
+        
+    }
+    .m_wrap_fixed {
+        width: 100%; min-width: 260px;
+        height: 45px;
+        position: fixed; z-index: 100;
+        background-color: rgb(255, 255, 255);
     }
     .hover_border {
         top: 45px;
@@ -328,20 +340,19 @@ nav {
     }
 
     /* Mobile 언어전환 */
-    .language {
+    .language_m {
         font-family: 'Metropolis-Medium';
         font-size: 12px; font-weight: 400;
         height: 18px;
-        border: none; border-radius: 0;
         margin: 0; padding: 3px 0;
+        position: absolute; top: 15px; right: 22%;
         display: flex;
-        position: absolute; top: 15px; right: 15px;
     }
-    .language a {
+    .language_m a {
         padding: 0 10px; margin: 0;
         color: rgb(136, 136, 136);
     }
-    .language a:first-child { 
+    .language_m a:first-child { 
         color: rgb(0, 0, 0);
         border-right: 1px solid rgb(221, 221, 221);
     }
@@ -352,8 +363,7 @@ nav {
         text-align: left;
         padding: 0;
         position: absolute fixed; top: 45px;
-        height: -webkit-calc(100vh - 45px);
-        overflow: hidden;
+        height: auto;
         overflow-y: scroll;
     }
     .gnb_menu_m {
@@ -397,7 +407,7 @@ nav {
         width: -webkit-calc(100% - 30px); height: 200px; 
         display: block;
         padding: 35px 20px 40px;
-        margin: 20px auto 50px;
+        margin: 20px auto 150px;
         position: relative; top: 0px; left: 0;
         background: url(../img/recruitBanner_bg.jpg) no-repeat center right;
         background-size: cover;
@@ -409,6 +419,10 @@ nav {
     }
 
     /* Mobile 입점 및 위치안내(하단으로 이동) */
+    .m_locate_wrap {
+        height: 50px; width: 80%;
+        position: fixed; bottom: 0;
+    }
     .m_locate {
         width: 100%;
         display: flex; justify-content: space-between;
@@ -437,7 +451,7 @@ nav {
         width: 26px; height: 26px;
         background: url(../img/allMenuD_closeBtn.png) no-repeat center;
         background-size: 16px;
-        position: absolute; top: 11px; right: 81%;
+        position: absolute; top: 11px; right: 101%;
         z-index: 300;
     }
 }

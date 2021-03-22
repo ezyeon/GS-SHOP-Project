@@ -11,6 +11,7 @@ main {
     text-align: center; color: rgb(255, 255, 255); 
     background: url(../img/subVisual_csr.jpg) no-repeat center 0px; 
     background-size: cover;
+    background-attachment: scroll;
 }
 
 .subpg_hero_title {
@@ -30,7 +31,7 @@ main {
 
 .subpg_menu_wrap { 
     width: calc(100% - 180px); height: 200px;
-    margin: 0 auto; 
+    margin: 0 auto 100px; 
     background-color: rgb(255, 255, 255); 
     color: rgb(85, 85, 85);
     position: absolute; left: 90px; bottom: 0;
@@ -112,7 +113,7 @@ main {
         padding: 20px 35px 40px;
         border: 1px solid rgb(229, 229, 229) ;
         position: relative; top: 35px; right: -30px;
-        z-index: 1; float: initial;
+        z-index: 1;
     }
     .shr_sns img {
         display: block; 
@@ -124,7 +125,7 @@ main {
 .csr_activity_wrap { 
     width: 100%; height: 100%; 
     padding-bottom: 150px;
-    position: relative; top: 0px; bottom: auto;
+    position: static; top: 0px; bottom: auto;
 }
 .csr_activity_wrap h4 {
     z-index: 8;
@@ -141,7 +142,7 @@ main {
     padding: 50px 50px 0;
 }
 .csr_activity img {
-     width: 100%;
+     width: 100%; 
     }
 .csr_activity p { 
     margin: 25px auto 0; 

@@ -107,28 +107,21 @@
             }
         };
 
-
         // Mobile에서의 GNB Open event(완성)
         function mobileMenuOpen() {
             // 클릭하면 맨 위로 이동 추가(0320)
             document.documentElement.scrollTop = 0; 
-            document.getElementById('m_header').style = "height:100vh; overflow:auto; background-color: rgba(0, 0, 0, 0.4);";
-            document.getElementsByClassName('m_gnb_menu')[0].style = "right:0%;  height: 100%; max-height:100vmax; animation: r_to_l 0.5s forwards;";
+            document.getElementById('m_header').style = "height:100%; max-height:100vh; overflow:auto; background-color: rgba(0, 0, 0, 0.4);";
+            document.getElementsByClassName('m_gnb_menu')[0].style = "right:0%;  height: 100%; max-height:100vh; animation: r_to_l 0.5s forwards;";
             document.getElementsByTagName('body')[0].style.overflow = 'hidden';
         }
 
         // Mobile에서의 GNB Close event(완성)
         function mobileMenuClose() {
             document.getElementById('m_header').style = "height:45px; overflow:hidden; transition: all 0s ease-out 0.4s; background-color: rgba(0, 0, 0, 0);";
-            document.getElementsByClassName('m_gnb_menu')[0].style = "right:-100%; animation: l_to_r 0.5s forwards;";
+            document.getElementsByClassName('m_gnb_menu')[0].style = "right:-90%; animation: l_to_r 0.5s forwards;";
             document.getElementsByTagName('body')[0].style.overflow = 'visible';
         }
-
-
-
-
-
-
 
 
         // Mobile에서의 nav의 hidden menu open Event
@@ -211,6 +204,21 @@
 
     function familySiteClose() {
         document.getElementsByClassName('familysite_riseup')[0].style = "height: 0px; overflow:hidden; transition: all .3s;";
+    }
+
+
+    // CCM Page Open Close Event
+    function ccmPageOpen() {
+        document.getElementsByClassName('ccm_pop_up')[0].style = "display:block;";
+        document.documentElement.scrollTop = 0;
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        document.getElementsByClassName('desktop_gnb_menu')[0].style = "display:none;";
+    }
+
+    function ccmPageClose() {
+        document.getElementsByClassName('ccm_pop_up')[0].style = "display:none;";
+        document.getElementsByTagName('body')[0].style.overflow = 'visible';
+        document.getElementsByClassName('desktop_gnb_menu')[0].style = "display:block;";
     }
 
 
