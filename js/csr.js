@@ -140,15 +140,18 @@
                 for (i=0; i<4; i++) {
                     if (i != target) {
                     document.getElementsByClassName('gnb_menu_m')[i].style = "max-height: 63px;";
+                    document.getElementsByClassName('m_menu_arrow')[i].style = "transform:rotate(0deg);"
                     openState[i] = false }
                 }
 
                 // 클릭했을 때 이벤트 발생
                 if (openState[target]) {
                     document.getElementsByClassName('gnb_menu_m')[target].style = "max-height:63px;";
+                    document.getElementsByClassName('m_menu_arrow')[target].style = "transform:rotate(0deg);"
                     openState[target] = false }
                 else {
                     document.getElementsByClassName('gnb_menu_m')[target].style = "max-height:300px;";
+                    document.getElementsByClassName('m_menu_arrow')[target].style = "transform:rotate(180deg);"
                     openState[target] = true }
             }
     
