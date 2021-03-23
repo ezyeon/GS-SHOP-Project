@@ -294,6 +294,7 @@ main {
         height: 560px;
         padding: 230px 50px 0;
         background-position: center center;
+	margin-bottom: 0;
     }
     .subpg_hero h3 {
         font-size: 35px; line-height: 1;
