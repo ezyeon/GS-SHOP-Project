@@ -419,7 +419,7 @@ main {
 @media screen and (max-width: 500px) {
     /* subpage Menu */
     .subpg_menu_wrap {
-	bottom: 0; top:auto;
+	bottom: 80px; top:auto;
         padding: 17px 5% 0; 
     }
     .shr_btn {
