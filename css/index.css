@@ -308,7 +308,7 @@ main {
     .subpg_menu_wrap {
         width: 100%; height: 80px;
         padding: 15px 0 0;
-        position: absolute; top:0; bottom: auto;
+        position: absolute; top:500px; bottom: auto;
         opacity: 1;
         animation: none;
     }
